@@ -17,7 +17,7 @@ app.use(express.static("public"));
 
 // Routes
 // =============================================================
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://jane_admin:Test123@fitness-tracker-db-ttn7w.mongodb.net/", { useNewUrlParser: true });
 
 require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
